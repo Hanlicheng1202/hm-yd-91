@@ -158,7 +158,7 @@ export default {
         offset: this.reply.offset,
         source: this.reply.commentId.toString() // 获取文章的评论的id
       })
-      console.log(data) // 拿到的data只是第一页的数据
+      // console.log(data) // 拿到的data只是第一页的数据
       this.reply.list.push(...data.results)
       this.reply.loading = false // 关闭加载状态
       this.reply.finished = data.end_id === data.last_id

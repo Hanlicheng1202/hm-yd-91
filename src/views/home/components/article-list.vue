@@ -69,7 +69,7 @@ export default {
   created () {
     // 开启监听
     eventBus.$on('delArticle', (articleId, channelId) => {
-      console.log(articleId, channelId)
+      // console.log(articleId, channelId)
 
       if (this.channel_id === channelId) {
         // 这个条件表示 该列表就是当前激活的列表
@@ -136,7 +136,7 @@ export default {
     async onRefresh () {
       await this.$sleep()
       // 触发刷新
-      console.log('刷新了')
+      // console.log('刷新了')
       //   setTimeout(() => {
       //     let arr = Array.from(
       //       Array(10),

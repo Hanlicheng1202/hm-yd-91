@@ -45,7 +45,7 @@ export default {
       // console.log(this.$route.query)
       const { articleId } = this.$route.query
       this.article = await getArticleInfo(articleId)
-      console.log(this.article)
+      // console.log(this.article)
     },
     // 关注
     async follow () {
